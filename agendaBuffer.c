@@ -187,4 +187,4 @@ void Listar( void *pBuffer ) {
         AUX_INT2 = strlen( ( char* )auxPerson );
         auxPerson += ( AUX_INT2 + 1) * sizeof( char );
     }
-}
+    }
