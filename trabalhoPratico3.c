@@ -15,7 +15,11 @@ LeetCode 701
 
 struct TreeNode* insertIntoBST(struct TreeNode* root, int val) {
     if(root == NULL) {
-        return root;
+        struct TreeNode* node = malloc(sizeof(struct TreeNode));
+        node->val = val;
+        node->left = NULL;
+        node->right = NULL;
+        return node;
     }
     if(root->val > val) {
         root->left = insertIntoBST(root->left, val);
